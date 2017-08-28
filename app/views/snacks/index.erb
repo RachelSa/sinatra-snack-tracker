@@ -1,5 +1,5 @@
 <ul>
 <% @snacks.each do |snack| %>
-  <li><%= snack.name %> | rating: <%= snack.rating %><li>
+  <li><a href="/snacks/<%=snack.id%>"><%= snack.name %> | rating: <%= snack.rating %></a><li>
 <% end %>
 </ul>
